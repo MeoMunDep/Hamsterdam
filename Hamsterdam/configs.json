@@ -2,6 +2,9 @@
   "limit": 100,
   "countdown": 300,
   "country_time": "en-US",
-  "playGame2048": true,
-  "maxGame": 1000
+  "howMany2048Games": 0,
+  "isSpin": true,
+  "isDoTasks": true,
+  "isBuyHamsters": true,
+  "isClaimAchievements": true
 }
