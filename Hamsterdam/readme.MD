@@ -32,15 +32,20 @@ To get started with the bot, follow these steps:
 
 ```json
 {
-  "playGame2048": true,
-  "maxGame": 1000, //how many games
+  {
+  "howMany2048Games": 10,
+  "isSpin": true,
+  "isDoTasks": true,
+  "isBuyHamsters": true,
+  "isClaimAchievements": true,
+  "delayEachAccount": [5, 8],
   "limit": 5, //number of accounts run in a row
   "countdown": 300, //time to restarts all the accounts - count by seconds
   "country_time": "vi-VN" //timestamp base on the country
 }
 ```
 
-### 2. `datas.txt` 🗂️ -
+### 2. `datas.txt` 🗂️ -  Get it from here >>> [Link](https://t.me/KeoAirDropFreeNe/257/6879)
 
 ```txt
 query_id.../user...
