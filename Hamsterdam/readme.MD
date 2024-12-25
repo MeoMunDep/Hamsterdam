@@ -82,6 +82,6 @@ socks5://user:password@host:port
 💡 Usage:
 
 > You need to `cd` to the file after extract it
-> To run the bot, use the following command: `node 1`
+> To run the bot, use the following command: `cd hamsterdam-main/hamsterdam; node 1`
 
 🎇Enjoy!
