@@ -38,11 +38,11 @@ echo Checking node_modules location...
 if exist "..\node_modules" (
     cd ..
     echo Installing/Updating dependencies in parent directory...
-    npm install user-agents axios colors p-limit https-proxy-agent socks-proxy-agent crypto-js ws uuid xlsx readline-sync
+    npm install user-agents axios p-limit meo-forkcy-colors meo-forkcy-utils https-proxy-agent socks-proxy-agent crypto-js 
     cd %~dp0
 ) else (
     echo Installing dependencies in current directory...
-    npm install user-agents axios colors p-limit https-proxy-agent socks-proxy-agent crypto-js ws uuid xlsx readline-sync
+    npm install user-agents axios p-limit meo-forkcy-colors meo-forkcy-utils https-proxy-agent socks-proxy-agent crypto-js 
 )
 echo.
 echo Dependencies installation completed!
@@ -55,7 +55,6 @@ echo Creating configuration files...
 
 if not exist configs.json (
     echo {> configs.json
-    echo   "country_time": "en-US",>> configs.json
     echo   "isSpin": true,>> configs.json
     echo   "howMany2048Games": 10,>> configs.json
     echo   "delayEachAccount": [5, 8],>> configs.json
@@ -74,10 +73,7 @@ if not exist datas.txt (
     type nul > datas.txt
     echo Created datas.txt
 )
-if not exist wallets.txt (
-    type nul > wallets.txt
-    echo Created wallets.txt
-)
+
 if not exist proxies.txt (
     type nul > proxies.txt
     echo Created proxies.txt
@@ -98,7 +94,7 @@ if exist "..\node_modules" (
 ) else (
     echo Using node_modules from current directory
 )
-cd hamsterdam && node bot
+node meomundep
 pause
 goto MENU
 

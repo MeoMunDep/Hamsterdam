@@ -1,7 +1,6 @@
 {
   "limit": 100,
   "countdown": 300,
-  "country_time": "en-US",
   "delayEachAccount": [5, 8],
   "howMany2048Games": 0,
   "isSpin": true,

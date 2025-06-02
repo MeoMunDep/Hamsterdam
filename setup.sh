@@ -32,7 +32,6 @@ create_default_configs() {
 {
   "limit": 100,
   "countdown": 300,
-  "country_time": "en-US",
   "delayEachAccount": [5, 8],
   "howMany2048Games": 0,
   "isSpin": true,
@@ -40,7 +39,6 @@ create_default_configs() {
   "isBuyHamsters": true,
   "isClaimAchievements": true
 }
-
 EOL
 }
 
@@ -73,7 +71,7 @@ while true; do
             clear
             print_yellow "Installing/Updating Node.js dependencies..."
             cd "$MODULES_DIR"
-            npm install user-agents axios colors p-limit https-proxy-agent socks-proxy-agent crypto-js ws uuid xlsx readline-sync
+            npm install user-agents axios p-limit meo-forkcy-colors meo-forkcy-utils https-proxy-agent socks-proxy-agent crypto-js 
             cd - > /dev/null
             print_green "Dependencies installation completed!"
             read -p "Press Enter to continue..."
